@@ -1,0 +1,93 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.camera_sqlite"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:2:2-78
+15-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:2:19-75
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:3:2-77
+16-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:3:19-74
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->[:camera] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-65
+17-->[:camera] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-62
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->[:camera] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-71
+18-->[:camera] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\camera\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-68
+19
+20    <application
+20-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:4:2-12:16
+21        android:name="io.flutter.app.FlutterApplication"
+21-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:4:15-63
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.0.2] C:\Users\samue\.gradle\caches\transforms-2\files-2.1\fecc98e05c7ccd4a0eedf7cff343a233\core-1.0.2\AndroidManifest.xml:22:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:4:94-128
+25        android:label="camera_sqlite" >
+25-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:4:64-93
+26        <activity
+26-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:3-10:14
+27            android:name="com.example.camera_sqlite.MainActivity"
+27-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:13-41
+28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:108-258
+29            android:hardwareAccelerated="true"
+29-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:259-293
+30            android:launchMode="singleTop"
+30-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:42-72
+31            android:theme="@style/LaunchTheme"
+31-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:73-107
+32            android:windowSoftInputMode="adjustResize" >
+32-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:5:294-336
+33            <intent-filter>
+33-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:6:4-9:20
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:7:5-57
+34-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:7:13-54
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:8:5-65
+36-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:8:15-62
+37            </intent-filter>
+38        </activity>
+39
+40        <meta-data
+40-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:11:3-66
+41            android:name="flutterEmbedding"
+41-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:11:14-45
+42            android:value="2" />
+42-->C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\android\app\src\main\AndroidManifest.xml:11:46-63
+43
+44        <provider
+44-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+45            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+45-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+46            android:authorities="com.example.camera_sqlite.flutter.image_provider"
+46-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+47            android:exported="false"
+47-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+48            android:grantUriPermissions="true" >
+48-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+49            <meta-data
+49-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+50                android:name="android.support.FILE_PROVIDER_PATHS"
+50-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+51                android:resource="@xml/flutter_image_picker_file_paths" />
+51-->[:image_picker] C:\WORKSPACE\FLUTTER\flutter-camera-sqlite\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+52        </provider>
+53    </application>
+54
+55</manifest>

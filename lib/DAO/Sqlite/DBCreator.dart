@@ -9,17 +9,15 @@ class DatabaseCreator {
   static const String ID = 'id';
   static const String NAME = 'photoName';
   static const String TABLE = 'PhotosTable';
-  static const String DB_NAME = 'photos12.db';
+  static const String DB_NAME = 'photos16.db';
   Future<void> createTable(Database db) async {
     final photosTable = '''CREATE TABLE $TABLE ($ID INTEGER, $NAME TEXT)''';
-
     await db.execute(photosTable);
   }
 
   Future<String> getDatabasePath(String dbName) async {
     final databasePath = await getDatabasesPath();
     final path = join(databasePath, dbName);
-    //make sure the folder exists
     if (await Directory(dirname(path)).exists()) {
       //await deleteDatabase(path);
     } else {

@@ -33,7 +33,9 @@ class _SaveImageDemoSQLiteState extends State<SaveImageDemoSQLite> {
 
   refreshImages() {
     dbHelper.getPhotos().then((imgs) {
-      print(imgs[0].photoName);
+      for (var i = 0; i < imgs.length; i++) {
+        print(imgs[i].id);
+      }
       setState(() {
         images.clear();
         images.addAll(imgs);
@@ -41,7 +43,7 @@ class _SaveImageDemoSQLiteState extends State<SaveImageDemoSQLite> {
     });
   }
 
-  _takePhoto() {
+  _takePhoto() async {
     ImagePicker.pickImage(source: ImageSource.camera)
         .then((File recordedImage) async {
       if (recordedImage != null && recordedImage.path != null) {
